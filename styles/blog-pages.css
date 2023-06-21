@@ -8,10 +8,20 @@ body {
 
 h1 {
   font-size: 60px;
+  font-family: 'Chewy', cursive;
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
 }
 
 h3 {
   font-size: 30px;
+  font-family: 'Chewy', cursive;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* NAVIGATION BAR */
@@ -34,6 +44,7 @@ h3 {
   padding: 20px;
   font-size: 36px;
   color: #fbe9d2;
+  font-family: 'Chewy', cursive;
 }
 
 .nav ul {
@@ -85,4 +96,19 @@ h3 {
   .main-section-left {
     width: auto;
   }
+}
+
+/* PAGE BREAK */
+
+.break {
+  background-color: #fe81c3;
+  padding: 20px;
+  color: #fbe9d2;
+}
+
+.break img {
+  width: 60px;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
 }

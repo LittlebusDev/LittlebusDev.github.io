@@ -8,10 +8,16 @@ body {
 
 h1 {
   font-size: 60px;
+  font-family: 'Chewy', cursive;
 }
 
 h3 {
   font-size: 30px;
+  font-family: 'Chewy', cursive;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* NAVIGATION BAR */
@@ -34,6 +40,7 @@ h3 {
   padding: 20px;
   font-size: 36px;
   color: #fbe9d2;
+  font-family: 'Chewy', cursive;
 }
 
 .nav ul {
@@ -69,6 +76,10 @@ h3 {
 
 .main-section-right h1 {
   color: #fbe9d2;
+}
+
+.main-section p {
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* PAGE BREAK */
@@ -110,6 +121,7 @@ h3 {
 .sprints a {
   text-decoration: none;
   color: #fbe9d2;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .sprint {
