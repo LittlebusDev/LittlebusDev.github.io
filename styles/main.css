@@ -4,6 +4,16 @@ body {
   margin: 0;
 }
 
+/* STANDARDS */
+
+h1 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
 /* NAVIGATION BAR */
 
 .nav {
@@ -13,11 +23,17 @@ body {
   background-color: #fe5f00;
 }
 
+.nav img {
+  height: 80px;
+  width: 80px;
+}
 .nav a {
   text-decoration: none;
   color: inherit;
   display: block;
   padding: 20px;
+  font-size: 36px;
+  color: #fbe9d2;
 }
 
 .nav ul {
@@ -26,14 +42,20 @@ body {
 
 .nav li {
   float: left;
-  margin: auto;
+  margin-right: 40px;
+  margin-left: 40px;
 }
+
+/* MAIN SECTION */
 
 .main-section {
   display: flex;
   margin: 0;
 }
 
+.main-section img {
+  height: 200px;
+}
 .main-section-left {
   width: 50%;
   padding: 100px;
@@ -45,12 +67,125 @@ body {
   padding: 100px;
 }
 
+.main-section-right h1 {
+  color: #fbe9d2;
+}
+
+/* PAGE BREAK */
+
 .break {
   background-color: #fe81c3;
-  padding: 10px;
+  padding: 20px;
+  color: #fbe9d2;
 }
+
+.break img {
+  width: 60px;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* SPTINT SECTION */
 
 .middle {
   background-color: #fe5f00;
   padding: 80px;
 }
+
+.sprints {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.sprints ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.sprints li {
+  padding: 10px;
+}
+
+.sprints a {
+  text-decoration: none;
+  color: #fbe9d2;
+}
+
+.sprint {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+}
+
+.sprint h3 {
+  color: #fbe9d2;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 700px) {
+  .sprints {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .main-section-left {
+    display: none;
+  }
+
+  .main-section-right {
+    width: 100%;
+  }
+}
+
+/* .sprints {
+  display: flex;
+  flex-direction: row;
+  color: #fbe9d2;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.sprint-one-section {
+  width: 600px;
+  height: 300px;
+  background-color: #fbe9d2;
+  justify-content: center;
+  color: #fe5f00;
+}
+
+.sprint-one-section a {
+  color: #fe5f00;
+}
+
+.sprint-one-section img {
+  height: 60px;
+  width: 60px;
+}
+
+.sprint-two-section {
+  width: 500px;
+  height: 300px;
+}
+
+.sprint-three-section {
+  width: 500px;
+  background-color: #fbe9d2;
+  justify-content: center;
+  color: #fe5f00;
+}
+
+.sprint-three-section a {
+  color: #fe5f00;
+}
+
+.sprint-three-section img {
+  height: 60px;
+  width: 60px;
+}
+.sprint-four-section {
+  width: 500px;
+} */
