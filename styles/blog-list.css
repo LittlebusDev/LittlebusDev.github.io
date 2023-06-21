@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+h1 {
+  color: seagreen;
+}
+
 /* NAVIGATION BAR */
 
 .nav {
@@ -26,15 +30,7 @@ body {
   float: left;
 }
 
-/* MAIN TEXT SECTION */
-
-h1 {
-  color: seagreen;
-}
-
-/* MIDDLE TEXT SECTION */
-
-.middle-section {
+.sprints {
   display: flex;
   justify-content: space-around;
   margin: 30px;
