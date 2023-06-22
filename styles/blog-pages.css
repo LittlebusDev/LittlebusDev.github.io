@@ -65,17 +65,30 @@ p {
 }
 
 .main-section-left {
-  width: 50%;
+  width: 70%;
   padding: 150px;
-  margin-top: 60px;
   flex: 1;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 200px;
+  width: 350px;
+  padding-left: 110px;
+  margin: 50px;
+}
+
+#right-image {
+  padding-left: 20px;
 }
 
 .main-section-right {
   background-color: #fda036;
   color: #fbe9d2;
-  width: 50%;
-  padding: 150px;
+  width: 30%;
+  padding: 50px;
   flex: 1;
 }
 
@@ -96,6 +109,19 @@ p {
   .main-section-left {
     width: auto;
   }
+}
+
+.overflow-text-section {
+  padding-top: 50px;
+}
+
+.overflow-text-section img {
+  height: 400px;
+  width: 550px;
+}
+
+.overflow-text-section h2 {
+  padding-top: 20px;
 }
 
 /* PAGE BREAK */

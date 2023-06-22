@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/blog-pages.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>Margin, Borders & Padding - oh my!</title>
+  </head>
+
+  <body>
+  <!-- NAVIGATION BAR -->
+
+  <body>
+    <div class="nav">
+      <div class="nav-list">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li>
+            <img
+              src="/images/sparkles-other.png"
+              alt="small vector of sparkles"
+            />
+          </li>
+          <li><a href="#">About Me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- MAIN TEXT SECTION -->
+    <div class="main-section">
+      <div class="main-section-left">
+        <p>
+          As designers and humans we love white space. <br>Great swathes of it as far as the eye can see!
+          <br>Well maybe not <em>THAT</em> far but, quite far. It not only gives us some breathing room
+          between elements, but it helps give the ole eyeballs somewhere to rest. It's calming.
+          Take these two images for example - which do you think looks most "restful"? 
+        </p>
+        <div class="images">
+           <img id="left-image" src="/images/cluttered-desk.webp" alt="picture of very cluttered desk">
+           <img id="right-image" src="/images/clean-desk.jpeg" alt="picture of very clean desk">
+        </div>
+        <p>
+          Now unless you're a statistical anomoly (in which case.. erm. sorry?) you're going to prefer
+          the image on the right. The space between the things make it look more calm and clear.
+          It has the added bonus of being able to showcase the indiviudal items more.
+          <br>
+          Now try this for me, take a look at the picture on the left, and then close your eyes.
+          Can you tell me how many pens and penils there are in the image?
+          <br>
+          <br>
+          <br>
+          No?
+          <br>
+          <br>
+          <br>
+          Of course you can't.
+          <br>
+          Now, look at the picture on the right and then close your eyes. Can you remember how many pens there are?
+          One. You're right! See how much easier it was to identify the individual items? That's because of the white space
+          between the items and the white space around the image as a whole
+        </p>
+        <p>So, now I've (hopefully) demonstrated how important white space is for design in general, how does this relate to coding?
+          And what on earth does it have to do with margins, borders and padding (oh  my!) - sorry, can't resist..
+          <br>
+          Well these three CSS styling tools are going to be invaluable in helping us create that big ole sea of white space
+          that we all crave. Let's start at the outside and work our way down - like an onion.
+        </p>
+      </div>
+      <div class="main-section-right">
+        <h1>
+          Margin, Borders & Padding - Oh My!
+        </h1>
+        <h2>
+          What are they and why do we use each one? <br>
+          <em
+            >Let's get technical bay-bee</em
+          >
+        </h2>
+        <h3>22 June 2023</h3>
+      </div>
+    </div>
+
+    <div class="overflow-text-section">
+      <h2>The Outer Layers</h2>
+      <p>So if I use the homepage of my website as an example, we can see that the image should go right to the edge of the screen like this
+        because I have my margin set to 0px.
+      </p>
+      <img src="/images/imac-website.png" alt="imac screen with image of honepage">
+      <p>Now if I wanted to add a margin, it would end up looking something more like this;</p>
+      <img src="/images/imac-website-margin.png" alt="imac screen with image of homepage with margin added">
+      <p>Do you see the space we've added all around the website? That's the margin - the space around the outside of your content. <br>
+        This works will all element blocks, like divs, images, paragraphs etc, you can add a margin (the space around the outside) to all of them.
+        <br>
+        We add the margin by using the css syntax of [ margin: --px ] (or whatever measurement you're using.)  
+        There are of course many ways to edit the margin, <br> but I'll save that for another blog post - for now, this will do.
+        <br>
+        <br>
+        <br> Down a layer we go.
+      </p>
+      <h2>The Border Layer</h2>
+      <p>Now we come to the border.<br>
+      While technically this is a way of adding "space" to an element, it's often used more like a decorative addition.
+      It does exactly what it says on the tin <br> - adds a border. If we go back to our website example, right now we've added the margin
+      (the space around the outside of the element - good well remembered!) so now let's add a border.
+      <br>
+      I'm going to add a lovely solid pink chunky border to the whole of the website. What do you think?
+      </p>
+      <img src="/images/imac-website-margin-border.png" alt="imac screen with image of homepage with margin and border added">
+      <p>Now aethetically, this is kinda trash. But you get the idea of how the border works? <br> Again, there are many ways to
+        add a border and mess around with how it looks, <br> but the syntax is probably how you'd expect it to be [ border: --px ]
+        with a [ border-style: solid ] and [ border-color: #FAB8E5 ]
+      </p>
+      <h2>The Padding Layer [the final boss]</h2>
+      <p>Okay, so we have padding around the <strong>outside</strong> of our website called the....? Margin! Yes!
+      <br> And then we have this aesthetically pleasing what around the edge of  our website? Border! Yeah! 
+      <br> Now we think okay, well I like the spacing, but I feel like all the "stuff" in my website is too close to the edge.
+      How do we fix that? With padding! 
+    <br> A good way to think of padding, is like wrapping your content in bubblewrap, to protect it from the "edges" of your container (be that a div, or box or ehat have you)
+  </p>
+    </div>
+
+    <div class="break">
+      <img src="/images/flower-beige.png" alt="vector of beige flower" />
+      <img src="/images/flower-beige.png" alt="vector of beige flower" />
+      <img src="/images/flower-beige.png" alt="vector of beige flower" />
+      <img src="/images/flower-beige.png" alt="vector of beige flower" />
+      <img src="/images/flower-beige.png" alt="vector of beige flower" />
+    </div>
+
+
+    <!-- this is a comment. -->
+  </body>
+</html>
