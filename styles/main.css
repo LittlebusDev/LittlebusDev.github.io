@@ -97,6 +97,17 @@ p {
   padding-right: 20px;
 }
 
+.break-flower {
+  padding: 20px;
+}
+
+.break-flower img {
+  width: 60px;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /* SPTINT SECTION */
 
 button {
@@ -109,7 +120,21 @@ button {
   border-width: 4px;
   border-radius: 20px;
   padding: 15px;
+  margin-bottom: 30px;
 }
+
+/* #core-btn {
+  background-color: #ec79b5;
+  font-family: 'Chewy', cursive;
+  font-size: 20px;
+  color: #fbe9d2;
+  border: #fe81c3;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 30px;
+} */
 
 .sprints a {
   font-family: 'Chewy', cursive;

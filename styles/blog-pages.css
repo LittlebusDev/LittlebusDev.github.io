@@ -64,6 +64,11 @@ p {
   margin: 0;
 }
 
+.main-section a {
+  text-decoration: none;
+  color: black;
+}
+
 .main-section-left {
   width: 70%;
   padding: 150px;
@@ -113,6 +118,9 @@ p {
 
 .overflow-text-section {
   padding-top: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  max-width: fit-content;
 }
 
 .overflow-text-section img {
@@ -137,4 +145,15 @@ p {
   height: 60px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.break-flower {
+  padding-top: 50px;
+}
+
+.break-flower img {
+  width: 60px;
+  height: 60px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
