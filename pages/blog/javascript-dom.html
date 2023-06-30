@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/blog-pages.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chewy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <title>JavaScript and DOM</title>
+  </head>
+
+  <body>
+    <!-- NAVIGATION BAR -->
+
+    <body>
+      <div class="nav">
+        <div class="nav-list">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li>
+              <img
+                src="/images/sparkles-other.png"
+                alt="small vector of sparkles"
+              />
+            </li>
+            <li><a href="#">About Me</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- MAIN TEXT SECTION -->
+      <div class="main-section">
+        <div class="main-section-left">
+          <h3>Where to start?</h3>
+
+          <p>
+            At this point in our journey, we've gone over HTML (the main heart
+            of our website) CSS (the "pretty" layer of our website) and we have
+            a pretty okay (albeit static) website. Now, how do we interact with
+            it? JavaScript! And an understanding of the DOM.
+          </p>
+
+          <h3>So what is JavaScript?</h3>
+
+          <p>
+            Javascript is another coding language (like HTML and CSS) and this
+            is how we do things like make working buttons, make things sparkle,
+            make things move, add comments, like, share, purchase etc. Think of
+            it as the final layer of a website to take it from a photograph to a
+            moving interactable video.
+          </p>
+
+          <h3>Do you have a handy-dandy analogy for me?</h3>
+
+          <p>
+            Yeah! I do! So a slightly easier way to think of JavaScript in
+            relation to HTML and CSS would be like a lock and a key. In this
+            example, lets say that the lock is the HTML and the key is the CSS.
+            A lock is a useful item, it's fine just as it is. It's a lock. Cool.
+            We love locks. JavaScript in this analogy would be the ACT of using
+            the key to unlock and lock the lock. So without Javascript, the lock
+            and key would just be a lock and key. But <em>WITH</em> JavaScript,
+            it's a functioning lockable and unlockable thing.
+            <br />
+            <br />
+            Does that make sense?
+          </p>
+        </div>
+        <div class="main-section-right">
+          <h1>JavaScript & the DOM</h1>
+          <h2>
+            What is it? How does it fit with HTML & CSS?<br />
+            <em>Let's get learning bay-bee</em>
+          </h2>
+          <h3>1st JULY 2023</h3>
+        </div>
+      </div>
+
+      <div class="overflow-text-section">
+        <h3>Okay, so what next?</h3>
+        <p>
+          So now we have an idea of what JavaScript is, how do we use? Well we
+          cn't go much further until we understand how JavaScript is read by the
+          browser. This is what's called the DOM.
+        </p>
+        <p>
+          The DOM (Document Object Model), is a visual representation of the
+          code written in such a way that allows JavaScript to interact with it.
+          So everything that we write in our HTML and CSS document gets packaged
+          up and converted into a single object - hence the name Document
+          Object!
+          <br />
+          Are you still with me? Let's try and show it visually!
+        </p>
+        <p>Here is what our HTML looks like regularly</p>
+        <img src="/images/code-text.png" alt="image of written code" />
+        <p>
+          Do you see how many individual elements there are here? How many lines
+          of readable code? <br />
+          A few! Now imagine trying to access all of that individually when
+          you're trying to make it interact-able.. Nightmare.
+          <br />
+          So to make this easy on us, the browser looks at all of our code and
+          packages it all toegther for us into simple, readable 'blobs' like
+          this;
+          <img src="/images/illustrated-div.png" alt="image of code" />
+        </p>
+        <p>
+          With me so far?
+          <br />
+          Okay so what does this mean for us and JavaScript? Well quite a bit.
+          JavaScript is written in a way to interact with THIS display of our
+          HTML and CSS. It's written on the assumtion that the information we've
+          put into our HTML and CSS will be displayed like this in the DOM, so
+          this is how we need to interact without HTML.
+        </p>
+
+        <h3>So how do we interact?</h3>
+        <p>
+          Woah woah, hang on. Before we interact, we need to learn about how the
+          information is <em>read</em> by our browsers.
+        </p>
+        <p>
+          Let's think of our HTML being read like making a mug with clay. There
+          are a few steps to get us from wet clay to solid mug, and they all
+          have to be done in a particular order, otherwise it won't work.
+        </p>
+        <p>
+          (1) So we need to start with wedging the clay and getting it ready
+          (otherwise our mug could crack in the kiln)
+        </p>
+        <p>
+          (2) Then we need to smack the clay around a little bit (otherwise the
+          mug could warp in the kiln)
+        </p>
+        <p>
+          (3) Then we throw the clay on a wheel (otherwise our mug would just be
+          a lump of clay)
+        </p>
+        <p>
+          (4) Then we need to leave it to dry so we can trim it (otherwise our
+          mug would be ugly)
+        </p>
+        <p>Then we trim and add a handle (otherwise our mug would be a pot)</p>
+        <p>
+          (5) Then we leave it to dry all the way to bone dry (otherwise our mug
+          could explode in the kiln)
+        </p>
+        <p>
+          (6) Then we bisque fire our mug (otherwise our mug won't be
+          waterproof)
+        </p>
+        <p>
+          (7) Then we glaze our mug (otherwise our mug won't be safe to drink
+          out of)
+        </p>
+        <p>
+          (8) Then we glaze fire our mug (otherwise the glaze would just be a
+          toxic powdery mess)
+        </p>
+        <br /><br />
+        <p>AND NOW WE HAVE A MUG!</p>
+        <br />
+        <p>
+          So these steps need to be carried out in a specific order, to get us
+          to our mug. There's a very specific order, otherwise it won't work.
+          This is known as "CONTROL FLOW" and that is what our JavaScript is
+          creating for the DOM. The JavaScript is the way we tell the DOM what
+          order to read our code.
+        </p>
+        <p>
+          So we've given our DOM a way to read our HTML & CSS (mug making
+          instructions) and the DOM will read it from top to bottom and only
+          progress if the statment has been completed (e.g the clay has been
+          wedged, so now we go to smacking it a bit, once that's done we're move
+          onto throwing and so on)
+        </p>
+        <p>
+          But what if we wanted to change our order? What if we wanted to
+          underglaze so we glaze fire and bisque fire at the same time? Or what
+          if we wanted to add another step? We can do that with something called
+          "CONDITIONALS" and "LOOPS"
+        </p>
+
+        <h3>What's a conditional?</h3>
+        <p>
+          In coding, they're if..else statements. "If this happens, do this, or
+          if it doesn't happen, do that." If we bring back our mug making
+          example, it would be "if you want to underglaze, make this your
+          working order - <br />
+          <br />(1), (2), (3), (4), (5), (7), (6). <br /><br />
+          Otherwise make your working order<br />
+          <br />(1), (2), (3), (4), (5), (6), (7), (8).
+        </p>
+        <br />
+        <p>Still with me?</p>
+
+        <h3>Okay, so what's a loop?</h3>
+        <p>
+          Looping is asking the code to repeat steps, over and over again until
+          your conditions have been met (or not if you forget to put one)
+        </p>
+        <p>
+          So in our example, let's say we have a relatively large kiln, and we
+          don't want to waste time and money by only firing one item at a time.
+          We would make a few more mugs, to fill the kiln and fire them all
+          toegther right? So we would "LOOP" our process - start at (1), and
+          progress all the way to (5), until we have enough mugs to fill the
+          kiln.
+        </p>
+        <p>
+          That my friend is a "LOOP". Keep doing this one thing, until this
+          thing happens. You need to have an end point for your "LOOP" otherwise
+          this would keep happening over and over and over and over again until
+          you run out of studio space, or your machine crashes.
+        </p>
+
+        <h3>
+          Okay, so we've got the DOM, we know how it should be read.. Now can we
+          interact with it?
+        </h3>
+        <p></p>
+      </div>
+
+      <div class="break">
+        <img src="/images/flower-beige.png" alt="vector of beige flower" />
+        <img src="/images/flower-beige.png" alt="vector of beige flower" />
+        <img src="/images/flower-beige.png" alt="vector of beige flower" />
+        <img src="/images/flower-beige.png" alt="vector of beige flower" />
+        <img src="/images/flower-beige.png" alt="vector of beige flower" />
+      </div>
+
+      <!-- this is a comment. -->
+    </body>
+  </body>
+</html>
