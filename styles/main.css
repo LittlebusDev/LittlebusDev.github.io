@@ -155,7 +155,7 @@ button {
 }
 
 .sprints {
-  display: -webkit-flex;
+  /* display: flex; */
   display: flex;
 }
 
